@@ -1,0 +1,66 @@
+
+
+module.exports = [{
+  "_id": "650e08dc63d222e2c0afc396",
+  "marque": "Toyota",
+  "modele": "Rav4",
+  "couleur": "Noir carbone",
+  "plaque":"X5G6G4",
+  "valet":"65137c7bd4cd47fd34c45755",
+  "isParked":true,
+  "latitude":500,
+  "longitude":500,
+  "isMoving":true,
+  "timeToLeave":"2023-11-27T04:00:00.210+00:00"
+}, 
+{
+  "_id": "650e404b63d222e2c0afc397",
+  "marque": "Toyota",
+  "modele": "Corolla",
+  "couleur": "Noir fumé",
+  "plaque":"MANIGA",
+  "valet":"65137c7bd4cd47fd34c45755",
+  "isParked":true,
+  "isMoving":false,
+  "latitude":200,
+  "longitude":200,
+  "timeToLeave":"2023-11-18T10:00:00.210+00:00"
+
+}, 
+{
+  "_id": "650e404b63d222e2c0afc398",
+  "marque": "Toyota",
+  "modele": "Hilux",
+  "couleur": "Noir teinté",
+  "plaque":"PRK667",
+  "valet":"65137c7bd4cd47fd34c45755",
+  "isParked":true,
+  "isMoving":false,
+  "latitude":100,
+  "longitude":100,
+  "timeToLeave":"2023-11-18T14:15:00.210+00:00"
+},
+{
+  "_id": "650e404b63d222e2c0afc399",
+  "marque": "Toyota",
+  "modele": "Highlander",
+  "couleur": "Noir foncé",
+  "plaque":"750016",
+  "valet":"65137c7bd4cd47fd34c45755",
+  "isParked":true,
+  "isMoving":false,
+  "latitude":400,
+  "longitude":400,
+  "timeToLeave":"2023-11-18T10:00:00.210+00:00",
+},
+{
+  "_id": "650e404b63d222e2c0afc39a",
+  "marque": "Toyota",
+  "modele": "CH-R",
+  "couleur": "Noir chromé",
+  "plaque":"FREEZE",
+  "valet":"65137c7bd4cd47fd34c45755",
+  "isParked":false,
+  "isMoving":false,
+},
+]
