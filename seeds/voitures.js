@@ -8,8 +8,8 @@ module.exports = [{
   "plaque":"X5G6G4",
   "valet":"65137c7bd4cd47fd34c45755",
   "isParked":true,
-  "latitude":500,
-  "longitude":500,
+  "latitude":42,
+  "longitude":-110,
   "isMoving":true,
   "timeToLeave":"2023-12-27T04:00:00.210+00:00"
 }, 
@@ -22,8 +22,8 @@ module.exports = [{
   "valet":"65137c7bd4cd47fd34c45755",
   "isParked":true,
   "isMoving":false,
-  "latitude":200,
-  "longitude":200,
+  "latitude":43,
+  "longitude":-109,
   "timeToLeave":"2023-12-12T10:00:00.210+00:00"
 
 }, 
@@ -36,8 +36,8 @@ module.exports = [{
   "valet":"65137c7bd4cd47fd34c45755",
   "isParked":true,
   "isMoving":false,
-  "latitude":100,
-  "longitude":100,
+  "latitude":41,
+  "longitude":-108,
   "timeToLeave":"2023-11-18T14:15:00.210+00:00"
 },
 {
@@ -49,8 +49,8 @@ module.exports = [{
   "valet":"65137c7bd4cd47fd34c45755",
   "isParked":true,
   "isMoving":false,
-  "latitude":400,
-  "longitude":400,
+  "latitude":44,
+  "longitude":-111,
   "timeToLeave":"2023-11-18T10:00:00.210+00:00",
 },
 {
