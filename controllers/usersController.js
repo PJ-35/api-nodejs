@@ -30,19 +30,24 @@ exports.getUsers = async (req, res, next) => {
 exports.getUser = async (req, res, next) => {
   try {
     const userId = req.user.userId;
-    const user = await checkUserExists(userId);
+    const users = await checkUserExists(userId);
 
-    user = user.map(post => {
+
+    const userss = users.map(user => {
       return {
-        ...post.toJSON(),
-        links: [
-          { rel: 'delete', method:'DELETE', href: `${url_base}/post/${post._id}` },
+        ...user._doc,
+        _links: [{
+          delete: 
+          {method:'DELETE',
+           href: url_base+req.url
+           }
+        }
         ]
       };
     })
 
     res.status(200).json({
-      user: user
+      user: userss
     });
   } catch (err) {
     next(err);
@@ -158,7 +163,7 @@ exports.updateCar = async (req, res, next) => {
 
 exports.deleteUser = async (req, res, next) => {
   try {
-    const userId = req.user.userId;
+    const userId = req.user.id;
     const user = await checkUserExists(userId);
     await user.deleteOne();
     if (user.voiture) {

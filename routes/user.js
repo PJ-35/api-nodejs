@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const usersController = require('../controllers/usersController');
-//const isAuth = require('../middleware/is-auth');
+const isAuth = require('../middleware/is-auth');
 
 
 // /user/ => GET
@@ -17,7 +17,7 @@ router.get('/user/:id', usersController.getUserById);
 router.put('/user/:userId', usersController.updateUser);
 
 // Suppression de l'utilisateur actuellement connecté
-router.delete('/user/', usersController.deleteUser);
+router.delete('/user/',isAuth, usersController.deleteUser);
 
 // Mise à jour d'une voiture
 router.put('/car/:userId', usersController.updateCar);
