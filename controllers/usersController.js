@@ -29,7 +29,7 @@ exports.getUsers = async (req, res, next) => {
 
 exports.getUser = async (req, res, next) => {
   try {
-    const userId = req.user.userId;
+    const userId = req.user.id;
     const users = await checkUserExists(userId);
     const userss = users.map(user => {
       return {
