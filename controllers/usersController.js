@@ -31,8 +31,6 @@ exports.getUser = async (req, res, next) => {
   try {
     const userId = req.user.userId;
     const users = await checkUserExists(userId);
-
-
     const userss = users.map(user => {
       return {
         ...user._doc,
@@ -165,6 +163,7 @@ exports.deleteUser = async (req, res, next) => {
   try {
     const userId = req.user.id;
     const user = await checkUserExists(userId);
+    console.log(userId)
     await user.deleteOne();
     if (user.voiture) {
       const voiture = await Voiture.findById(user.voiture);
