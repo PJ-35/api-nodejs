@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 var hateoasLinker = require('express-hateoas-links');
 
-const authRoutes = require('./routes/auth');
+//const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const historiqueRoutes = require('./routes/historique');
 const config = require('./config');
@@ -34,9 +34,6 @@ app.use((req, res, next) => {
 });
 
 
-/*
-
-
 // Utilisation des routes en tant que middleware
 app.use('/auth', authRoutes);
 app.use(userRoutes);
@@ -61,6 +58,3 @@ mongoose
   .catch(err => console.log(err));
 
  module.exports = app;
-
-
- */
