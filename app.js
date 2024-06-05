@@ -13,7 +13,7 @@ const seed = require("./routes/db");
 
 const app = express();
 const PORT = config.PORT;
-const MONGO_URL = config.MONGO_URL
+const MONGO_URL = config.MONGO_URL;
 
 // parse application/json
 app.use(express.json());  
@@ -33,6 +33,8 @@ app.use((req, res, next) => {
   next();
 });
 
+
+/*
 
 
 // Utilisation des routes en tant que middleware
@@ -58,5 +60,7 @@ mongoose
   })
   .catch(err => console.log(err));
 
-  module.exports = app;
+ module.exports = app;
 
+
+ */
