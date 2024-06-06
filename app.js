@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 var hateoasLinker = require('express-hateoas-links');
 
-//const authRoutes = require('./routes/auth');
+const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/user');
 const historiqueRoutes = require('./routes/historique');
 const config = require('./config');
@@ -32,6 +32,7 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
 });
+
 
 
 // Utilisation des routes en tant que middleware
